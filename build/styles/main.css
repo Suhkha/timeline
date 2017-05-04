@@ -32,6 +32,9 @@
   font-size: 24px;
   display: block;
 }
+.timeline .active {
+  color: #053054;
+}
 .timeline span,
 .timeline.timeline--left-line {
   border: solid 1px #d2ab66;
@@ -39,6 +42,9 @@
   display: inline-block;
   margin-bottom: -65px;
   margin-top: 60px;
+}
+.timeline--content {
+  margin-top: 80px;
 }
 .timeline--big-line {
   border: solid 5px #d2ab66;
