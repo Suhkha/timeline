@@ -39,10 +39,17 @@ gulp.task('bootstrap', function(){
 	.pipe(gulp.dest('build/styles'))
 });
 
+gulp.task('carousel', function(){
+	gulp.src(['node_modules/owl.carousel/dist/assets/owl.carousel.min.css'])
+	.pipe(rename('owl.carousel.min.css'))
+	.pipe(gulp.dest('build/styles'))
+});
+
 gulp.task('plugins-js', function(){
 	gulp.src([
 		'bower_components/jquery/dist/jquery.js',
-		'bower_components/modernizr/modernizr.js'
+		'bower_components/modernizr/modernizr.js',
+		'node_modules/owl.carousel/dist/owl.carousel.min.js',
 		])
 	.pipe(concat('vendor.min.js'))
 	.pipe(uglify())
@@ -68,4 +75,4 @@ gulp.task('watch', function(){
 });
 
 //default
-gulp.task('default', ['css','html','bootstrap','js','plugins-js','connect','watch']);
+gulp.task('default', ['css','html','bootstrap','carousel','js','plugins-js','connect','watch']);
