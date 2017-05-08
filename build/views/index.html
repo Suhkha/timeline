@@ -13,129 +13,97 @@
 	<div class="owl-carousel timeline">
 	  <div class="timeline--year"> 
 	  	<span class="timeline--left-line"></span>
-	  	<a href="" class="active" data-year="year-1">1850</a> 
+	  	<a href="" data-year="year-0">1850</a> 
 	  </div>
 	  <div class="timeline--year"> 
 	  	<span class="timeline--left-line"></span>
-	  	<a href="" data-year="year-2">1860</a> 
+	  	<a href="" data-year="year-1">1860</a> 
 	  </div>
 	  <div class="timeline--year"> 
 	  	<span class="timeline--left-line"></span>
-	  	<a href="" data-year="year-3">1870</a> 
+	  	<a href="" data-year="year-2">1870</a> 
 	  </div>
 	  <div class="timeline--year"> 
 	  	<span class="timeline--left-line"></span>
-	  	<a href="" data-year="year-4">1880</a> 
+	  	<a href="" data-year="year-3">1880</a> 
 	  </div>
 	  <div class="timeline--year"> 
 	  	<span class="timeline--left-line"></span>
-	  	<a href="" data-year="year-5">1890</a> 
+	  	<a href="" data-year="year-4">1890</a> 
 	  </div>
 	  <div class="timeline--year"> 
 	  	<span class="timeline--left-line"></span>
-	  	<a href="" data-year="year-6">1900</a> 
+	  	<a href="" data-year="year-5">1900</a> 
 	  </div>
 	  <div class="timeline--year"> 
 	  	<span class="timeline--left-line"></span>
-	  	<a href="" data-year="year-7">1910</a> 
+	  	<a href="" data-year="year-6">1910</a> 
 	  </div>
 	  <div class="timeline--year"> 
 	  	<span class="timeline--left-line"></span>
-	  	<a href="" data-year="year-8">1920</a> 
+	  	<a href="" data-year="year-7">1920</a> 
 	  </div>
 	  <div class="timeline--year"> 
 	  	<span class="timeline--left-line"></span>
-	  	<a href="" data-year="year-9">1930</a> 
+	  	<a href="" data-year="year-8">1930</a> 
 	  </div>
 	  <div class="timeline--year"> 
 	  	<span class="timeline--left-line"></span>
-	  	<a href="" data-year="year-11">1940</a> 
+	  	<a href="" data-year="year-9">1940</a> 
 	  </div>
 	  <div class="timeline--year"> 
 	  	<span class="timeline--left-line"></span>
-	  	<a href="" data-year="year-12">1950</a> 
+	  	<a href="" data-year="year-10">1950</a> 
 	  </div>
 	  <div class="timeline--year"> 
 	  	<span class="timeline--left-line"></span>
-	  	<a href="" data-year="year-13">1960</a> 
+	  	<a href="" data-year="year-11">1960</a> 
 	  </div>
 	  <div class="timeline--year"> 
 	  	<span class="timeline--left-line"></span>
-	  	<a href="" data-year="year-14">1970</a> 
+	  	<a href="" data-year="year-12">1970</a> 
 	  </div>
 	  <div class="timeline--year"> 
 	  	<span class="timeline--left-line"></span>
-	  	<a href="" data-year="year-15">1980</a> 
+	  	<a href="" data-year="year-13">1980</a> 
 	  </div>
 	  <div class="timeline--year"> 
 	  	<span class="timeline--left-line"></span>
-	  	<a href="" data-year="year-16">1990</a> 
+	  	<a href="" data-year="year-14">1990</a> 
 	  </div>
 	  <div class="timeline--year"> 
 	  	<span class="timeline--left-line"></span>
-	  	<a href="" data-year="year-17">2000</a> 
+	  	<a href="" data-year="year-15">2000</a> 
 	  </div>
 	  <div class="timeline--year"> 
 	  	<span class="timeline--left-line"></span>
-	  	<a href="" data-year="year-18">2010</a> 
+	  	<a href="" data-year="year-16">2010</a> 
 	  </div>
 	</div>
 	<div class="timeline--big-line"></div>
 
-	<div class="timeline--content">
-		<div id="year-1" class="year--content">
-			<div class="row">
-				<div class="col-md-4 col-xs-12">
-					<img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97350&w=300&h=300" class="img-responsive">
+	<div class="timeline--content" id="timeline-template">
+		<script id="timeline_list" type="text/x-handlebars-template">
+		{{#each years}}
+				<div id="{{id}}" class="year--content">
+					<div class="row">
+						<div class="col-md-4 col-xs-12">
+							<img src="{{img}}" class="img-responsive">
+						</div>
+						<div class="vertical-line col-md-1"></div>
+						<div class="col-md-6 col-xs-12">
+							<span class="year--content-detail">{{content}}</span>
+						</div>
+					</div>
 				</div>
-				<div class="vertical-line col-md-1"></div>
-				<div class="col-md-6 col-xs-12">
-					<span class="year--content-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
-				</div>
-			</div>
-		</div>
-		<div id="year-2" class="year--content">
-			<div class="row">
-				<div class="col-md-4 col-xs-12">
-					<img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97350&w=300&h=300" class="img-responsive">
-				</div>
-				<div class="vertical-line col-md-1"></div>
-				<div class="col-md-6 col-xs-12">
-					<span class="year--content-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
-				</div>
-			</div>
-		</div>
-		<div id="year-3" class="year--content">
-			<div class="row">
-				<div class="col-md-4 col-xs-12">
-					<img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97350&w=300&h=300" class="img-responsive">
-				</div>
-				<div class="vertical-line col-md-1"></div>
-				<div class="col-md-6 col-xs-12">
-					<span class="year--content-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
-				</div>
-			</div>
-		</div>
+		{{/each }}
+		</script>
 	</div>
 </main>
 
 	<script src="https://use.fontawesome.com/be7e763425.js"></script>
 	<script type="text/javascript" src="../scripts/vendor.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.8/handlebars.min.js"></script>
 	<script type="text/javascript" src="../scripts/main.js"></script>
 
 </body>
